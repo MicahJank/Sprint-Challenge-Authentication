@@ -70,3 +70,7 @@ Build a front end to show the jokes.
 
 - [ ] Add a React client that connects to the API and has pages for `Sign Up`, `Sign In` and showing a list of `Jokes`.
 - [ ] Once you have the functionality down, style it!
+
+### Required authentication configuration
+
+Set `JWT_SECRET` to a strong, unique private value before starting the server or running authentication tests. Startup fails if it is missing or blank. Copy `.env.example` only when using dotenv, or set the value in the shell or hosting secret store. Rotate any formerly shared signing key before reusing a deployment; this invalidates existing sessions.
